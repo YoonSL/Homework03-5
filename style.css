@@ -1,0 +1,140 @@
+body{
+    height: 100%;
+}
+
+header{
+    margin: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.grid{
+    display:grid;
+    height: 98vh;
+    grid-template-rows:repeat(4,1fr);
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 10px;
+    margin:10px;
+    color:white;
+}
+
+.hobby{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    background-color:grey;
+}
+
+.beer,.cat{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.beer{
+    background-image:url(images/beer.jpg);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+}
+.cook{
+    background-image:url(images/cook.jpg);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+    background-position:60% 80%;
+}
+.bbq{
+    background-image:url(images/bbq.png);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+    background-position:60% 50%;
+}
+.cat{
+    background-image:url(images/cat.jpg);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+}
+.dog{
+    background-image:url(images/dog.png);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+    background-position:70% 50%;
+}
+.lego{
+    background-image:url(images/lego.png);
+    background-size: cover;
+    filter:grayscale(30%);
+    background-position:20% 50%;
+    opacity:0.7;
+}
+p{
+    color:black;
+    font-weight:bolder;
+}
+
+@media only screen and (min-width:600px){
+
+.grid{
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns:repeat(7,1fr);
+}
+
+.beer{
+    background-image:url(images/beer.jpg);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+    grid-row: span 2;
+    grid-column: span 3;
+    background-position:50% 50%;
+}
+.cook{
+    background-image:url(images/cook.jpg);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+    grid-row: span 1;
+    grid-column: span 4;
+    background-position:50% 50%;
+    
+}
+.bbq{
+    background-image:url(images/bbq.png);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+    grid-row: span 1;
+    grid-column: span 2;
+    background-position:50% 50%;
+}
+.cat{
+    background-image:url(images/cat.jpg);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+    grid-row: span 2;
+    grid-column: span 2;
+    background-position:60% 50%;
+}
+.dog{
+    background-image:url(images/dog.png);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+    grid-row: span 1;
+    grid-column: span 2;
+    background-position:50% 50%;
+}
+.lego{
+    background-image:url(images/lego.png);
+    background-size: cover;
+    filter:grayscale(30%);
+    opacity:0.7;
+    grid-row: span 1;
+    grid-column: span 3;
+    background-position:50% 50%;
+}
+}
